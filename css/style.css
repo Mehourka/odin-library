@@ -55,6 +55,7 @@ form > button {
 .card {
 	background-color: var(--dark);
 	color: var(--light);
+	position: relative;
 
 	padding: 1rem;
 	display: flex;
@@ -64,4 +65,35 @@ form > button {
 
 .card.completed {
 	background-color: darkslategray;
+}
+
+
+.card .card-btn-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	position: absolute;
+	left: 1rem;
+	right: 1rem;
+	top: 1rem;
+}
+
+.card-btn-container button {
+	background-color: #0000;
+	color: var(--light);
+	font-weight: 800;
+	/* font-size: large; */
+	padding: 0px;
+	border: 4px solid var(--light);
+}
+
+.card-delete-btn {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+.card-btn-container .card-complete-btn {
+	border-radius: 4px;
+	font-size: small;
+
 }
